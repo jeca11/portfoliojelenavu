@@ -1,0 +1,506 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.portfolio{
+  background-image: url('/images/wp7043567.webp');
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+  }
+  .portfolio,
+  .pageone {
+    background-image: url('/images/wp7043567.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .portfolio {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.pageone {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 30vh;
+  background-image: url('../images/wp7043567.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav1 {
+  width: 100%;
+  padding: 2%;
+}
+
+.nav1 ul {
+  display: flex;
+  list-style: none;
+  gap: 4em;
+  letter-spacing: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul li {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.nav1 ul :hover {
+  opacity: 80%;
+  text-decoration: underline;
+  transition: 0.9s;
+}
+
+.nav1 li span {
+  text-decoration: underline;
+}
+
+.pageone h1 {
+  color: white;
+  margin: 10px auto;
+  max-width: 500px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.pageone h1 span {
+  color: rgb(14, 14, 131);
+  background-color: rgba(255, 255, 255, 0.64);
+}
+
+@media only screen and (max-width: 600px) {
+  .pageone h1 {
+    font-size: 24px;
+  }
+}
+
+.pageonecentral {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10%;
+}
+
+.imageofme {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(227, 227, 227, 0.314);
+}
+
+.imageofme:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+  background-color: rgba(227, 227, 227, 0.095);
+}
+
+@media only screen and (max-width: 900px) {
+  .imageofme {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+.rightpageone {
+  margin: 70px auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.rightpageone h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 3px;
+}
+
+.rightpageone h2 {
+  letter-spacing: 2px;
+}
+
+.pageonebottom {
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.pageonebottom img {
+  max-width: 60px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.pageonebottom img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .nav1 ul {
+    gap: 1em;
+  }
+}
+
+.pagetwo {
+  margin: 0px auto;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+  background-image: url('../images/wp7043567.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-bottom: 5%;
+  height: 140vh;
+}
+
+.pagetwo-center {
+  padding: 5%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.aboutme {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pagetwo h3 {
+  color: #82b9ef;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 0.9em;
+  cursor: pointer;
+}
+
+.pagetwo h3::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  color: #ffffff;
+  border-right: 2px solid #1bb0b0;
+  transition: width 0.4s ease-out;
+}
+
+.pagetwo h3:hover::before {
+  width: 100%;
+}
+
+.pagetwo h4 {
+  color: #f4e5e5;
+  padding: 10px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.pagetwo p {
+  background-color: rgba(255, 255, 255, 0.127);
+  margin: 0;
+  line-height: 1.4em;
+  color: rgb(235, 227, 227);
+  border: 1px solid rgba(101, 101, 178, 0.629);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.education-container {
+  position: relative;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.education-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.education-image {
+  width: 200px;
+  height: 40vh;
+  display: block;
+}
+
+.specialization-container h4 {
+  padding: 10px;
+}
+
+.specialization-container {
+  float: right;
+  max-width: 700px;
+  margin-left: 20px;
+}
+
+.specialization-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.specialization-image {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.skills-container {
+  float: left;
+  max-width: 700px;
+  margin: 20px;
+  position: relative;
+  font-size: 20px;
+}
+
+.skills-text {
+  text-shadow: 2px 2px 4px rgba(255, 252, 252, 0.7);
+  text-align: center;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .pagetwo h3,
+  .pagetwo h4,
+  pagetwo p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .education-image,
+  .specialization-image {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .skills-text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .pagetwo {
+    height: auto; 
+  }
+
+  .pagetwo-center {
+    padding: 3%; 
+  }
+
+  .education-container,
+  .specialization-container,
+  .skills-container {
+    max-width: 100%; 
+  }
+  
+  .pagetwo h3::before {
+    width: 70%; 
+  }
+}
+
+
+
+.pagethree {
+  margin: 0px auto;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+  background-image: url('../images/wp7043567.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  padding-bottom: 5%;
+}
+
+.pagethreename {
+  padding: 3%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.pagethree h1::before {
+  margin: 0 auto;
+  text-align: center;
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  color: #ffffff;
+  transition: width 2s ease-in;
+}
+
+.pagethree h1:hover::before {
+  width: 35%;
+}
+
+.pagethreecentral {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.onebox li {
+  list-style: none;
+}
+
+.onebox,
+.twobox,
+.fourbox {
+  line-height: 1.45em;
+  font-size: 20px;
+  margin: 0px auto;
+  max-width: 310px;
+  width: 100%;
+  background-color: rgba(38, 32, 32, 0.29);
+  text-align: center;
+  border: solid 2px rgba(222, 217, 190, 0.614);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.qstation {
+  max-width: 30px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .pagethreecentral {
+    flex-direction: column;
+  }
+  .onebox,
+  .twobox,
+  .threebox,
+  .fourbox {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.threebox {
+  max-width: 1100px;
+  width: 100%;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 10% auto;
+  cursor: pointer;
+}
+
+.fourpage {
+  margin: 0px auto;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+  background-image: url('../images/wp7043567.webp');
+  background-size: cover;
+  color: white;
+}
+
+.projects {
+  margin: 0px auto;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.projects h1 {
+  color: rgb(255, 239, 239);
+  margin: 30px;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 0.3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.projects h1:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 2.6);
+}
+
+.projects img {
+  margin: 40px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .projects img {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f46b;
+  color: rgb(255, 255, 255);
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-link img {
+  width: 30px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-info {
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+}
